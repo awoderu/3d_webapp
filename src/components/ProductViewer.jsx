@@ -1,6 +1,6 @@
 import React from 'react';
 
-import useMacbookStore from '../Store';
+import useMacbookStore from '../store';
 import { useMediaQuery } from 'react-responsive';
 import clsx from 'clsx';
 import { Canvas } from '@react-three/fiber';
