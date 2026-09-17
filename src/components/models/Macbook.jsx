@@ -15,11 +15,16 @@ import {noChangeParts} from "../../constants/index.js";
 import {Color} from "three";
 
 export default function MacbookModel(props) {
+  // support for video texture on macbook
     const { color, texture, } = useMacbookStore();
   const { nodes, materials, scene} = useGLTF('/models/macbook-transformed.glb')
 
+
+  // utility function by threejs to pass a video texture
     const screen = useVideoTexture(texture)
 
+
+    // Change the color with use effect check if its mesh if it is change the color
     useEffect(() => {
         scene.traverse((child) => {
             if (child.isMesh) {
