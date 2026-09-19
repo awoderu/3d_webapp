@@ -69,8 +69,8 @@ const Performance = () => {
 
   return (
     <section id="performance" ref={sectionRef}>
-      <h2>Next-level graphics performance </h2>
-      <div className='wrapper'>
+      <h2>Next-level graphics performance. Game on. </h2>
+      <div className='wrapper pb-12'>
         {performanceImages.map((item, index) => (
           <img key={index} src={item.src}
           className={item.id}
@@ -78,7 +78,7 @@ const Performance = () => {
         ))}
       </div>
 
-      <div className="content pb-12">
+      <div className="content">
                 <p>
                     Run graphics-intensive workflows with a responsiveness that keeps up
                     with your imagination. The M4 family of chips features a GPU with a
